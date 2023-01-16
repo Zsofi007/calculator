@@ -1,0 +1,123 @@
+
+
+footer{
+    background-color: burlywood;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+body{
+    margin: 0%;
+    background-color: cadetblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+#calculator{
+    margin-top: auto;
+    background-color: grey;
+    height: 60vh;
+    border-radius: 10px;
+    width:20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    border: 2px black solid;
+}
+
+#screen{
+    background-color: aliceblue;
+    width: 83%;
+    margin-bottom: 10px;
+    min-height: 13vh;
+    height: auto;
+    border: 2px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-end;
+    padding: 15px;
+    word-wrap: break-word;
+  word-break: break-all;
+}
+
+#top{
+    min-height: 4vh;
+}
+
+#bottom{
+    min-height: 6vh;
+    font-size: 2.5em;
+}
+
+#digits{
+    font-size: xx-large;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#digits > div {
+    border: 2px black solid;
+    background-color: aliceblue;
+    width: 4vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#digits > div:hover{
+    background-color:beige;
+}
+
+#cd{
+    width: 90%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cd > div{
+    border: 2px black solid;
+    background-color: aliceblue;
+    width: 8vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#cd > #clear{
+    background-color: lightblue;
+}
+
+#cd > #clear:hover{
+    background-color:aquamarine;
+}
+
+#cd > #delete{
+    background-color: lightcoral;
+}
+
+#cd > #delete:hover{
+    background-color:indianred;
+}
+
