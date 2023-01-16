@@ -83,6 +83,9 @@ function solve(x,y,op){
 function clearScreen(){
     topp.innerHTML =""
     bot.innerHTML=""
+    newInp = false
+    operator = ""
+    eq = false
     numbers = []
 }
 
