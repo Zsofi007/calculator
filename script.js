@@ -47,7 +47,11 @@ function log(e){
             eq = false
             if(input === "="){
                 topp.innerHTML = a + " " + operator + " " + b + " ="
-                newInp = false
+                if(res === "You stupid"){
+                    newInp = true
+                }else{
+                    newInp = false
+                }
                 eq = true
             }
             operator = input
@@ -67,6 +71,9 @@ function solve(x,y,op){
     }else if(op === "-"){
         return a-b
     }else if(op === "/"){
+        if(b === 0){
+            return "You stupid"
+        }
         return (a/b).toFixed(3);
     }else if(op === "+"){
         return a+b
